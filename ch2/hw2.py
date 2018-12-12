@@ -18,8 +18,10 @@ print(x)
 split = paragraph.split()
 print(len(split))  # 列表元素个数
 
-# Q4: x = 1, y = 6, 把兩個變數的值交換, 讓他變成 x = 6, y = 1, 只能使用加減乘除, 不能使用第三個變數
-x = 1
+# Q4: x = 2, y = 6, 把兩個變數的值交換, 讓他變成 x = 6, y = 2, 只能使用加減乘除, 不能使用第三個變數, 不能使用常數
+x = 2 
 y = 6
-x, y = y, x
-print(x , y)
+x = x + y # x = 8, y = 6
+y = x - y # x = 8, y = 2
+x = x - y # x = 6, y = 2
+print(x,y)
